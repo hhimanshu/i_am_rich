@@ -23,21 +23,16 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[600],
+      backgroundColor: Colors.black12,
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[900],
         title: const Center(
             child: Text('I AM RICH')
         ),
       ),
-      body: const Center(
-          child: Text(
-              'I am in center',
-            style: TextStyle(
-              color: Colors.yellow
-            ),
+      body: Center(
+        child: Image.network('https://static.euronews.com/articles/stories/06/25/84/50/1200x675_cmsv2_f71b6679-918e-5672-8b87-8f3e17af759e-6258450.jpg')
           )
-      ),
     );
   }
 }
