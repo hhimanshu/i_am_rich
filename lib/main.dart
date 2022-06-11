@@ -23,16 +23,18 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black12,
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey[900],
-        title: const Center(
-            child: Text('I AM RICH')
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey[900],
+          title: const Center(child: Text('I AM RICH')),
         ),
-      ),
-      body: Center(
-        child: Image.network('https://static.euronews.com/articles/stories/06/25/84/50/1200x675_cmsv2_f71b6679-918e-5672-8b87-8f3e17af759e-6258450.jpg')
-          )
-    );
+        body: Center(
+            child: Column(
+          children: [
+            Image.network(
+                'https://static.euronews.com/articles/stories/06/25/84/50/1200x675_cmsv2_f71b6679-918e-5672-8b87-8f3e17af759e-6258450.jpg'),
+            Image.asset('images/diamond.png')
+          ],
+        )));
   }
 }
